@@ -1,0 +1,9 @@
+﻿<h1>
+	Welcome to {{title}}!!
+</h1>
+<p>Only good things to come</p>
+<select>
+	<option *ngFor="let name of people;let i = index" [value]="i">{{name}}</option>
+</select>
+
+<button (click)="loadMore()">Load More</button>
